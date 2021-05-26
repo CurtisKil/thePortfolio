@@ -42,6 +42,10 @@ body {
   justify-content: center;
 }
 
+.nav li:hover {
+  transform: scale(1.1);
+}
+
 .nav a {
   color: #fff;
   font-weight: 505;
@@ -63,11 +67,12 @@ body {
   padding: 10px 0;
 }
 
-.nav a.current,
+.nav a.focus,
 .nav a:hover {
   color: #f3963e;
 }
 
+/* Hero */
 .hero {
   background-image: url("https://images.unsplash.com/photo-1618388810903-840bb0d15ea5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
   background-repeat: no-repeat;
@@ -115,4 +120,200 @@ body {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.5px;
+}
+
+.hero a {
+  display: block;
+  color: #fff;
+  font-weight: 505;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hero ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: 100vh;
+}
+
+.section {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#about img {
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#projects {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Expanding Cards */
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  border-radius: 50px;
+  color: rgb(65, 172, 235);
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.card-container {
+  display: flex;
+  width: 90vw;
+}
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Contact Form */
+.form-container {
+  background-color: gray;
+  padding: 20px 40px;
+  border-radius: 5px;
+  width: 80vw;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; */
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: #f3963e;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 100%;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #f3963e;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.69, -6.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #f3963e;
+  transform: translateY(-30px);
 }
