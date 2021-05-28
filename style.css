@@ -25,6 +25,7 @@ body {
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .nav .container {
@@ -43,6 +44,10 @@ body {
 }
 
 .nav li:hover {
+  transform: scale(1.1);
+}
+
+.nav h1:hover {
   transform: scale(1.1);
 }
 
@@ -86,7 +91,7 @@ body {
   text-align: center;
   position: relative;
   margin-bottom: 20px;
-  z-index: -2;
+  /* z-index: -2; */
 }
 
 .hero::before {
@@ -141,6 +146,9 @@ body {
 
 section {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section {
@@ -241,15 +249,12 @@ section {
   padding: 20px 40px;
   border-radius: 5px;
   width: 80vw;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; */
+  height: 65vh;
 }
 
 .container h1 {
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .btn {
@@ -316,4 +321,9 @@ section {
 .form-control input:valid + label span {
   color: #f3963e;
   transform: translateY(-30px);
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #fff;
 }
