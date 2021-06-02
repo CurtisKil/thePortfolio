@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css" />
     <title>Curtis Kilgore</title>
   </head>
@@ -56,13 +62,13 @@
 
         <section class="section content cases flex-grid section-padding" id="about">
         <header class="section-header">
-            <h2>About Me</h2>
-            <p>
+            <h2 data-aos="fade-right" data-aos-duration="800">About Me</h2>
+            <p data-aos="fade-up" data-aos-duration="1400">
            Front End Web Developer from Riverside, CA. Currently living in San Diego! I received a certificate from University California Riverside's Full Stack Coding Bootcamp and an Associates Degree in Social Science from Riverside City College. I've continued my learning through online courses, tutorials, freelance projects, and personal projects. 
            
-           I love learning and coding and the it excites me that in this field we never stop learning and developing our skills. As an athlete, I love that. I love fine tuning my skills. When I'm not coding, I enjoy audiobooks, podcasts, snowboarding, golfing, DIY projects, yoga, and learning new things.
+           I love learning and coding and it excites me that in this field we never stop learning and developing our skills. As an athlete, I love that. I love fine tuning my skills. When I'm not coding, I enjoy audiobooks, podcasts, snowboarding, golfing, DIY projects, yoga, learning, and new things.
             </p>
-            <img src="/assets/images/disneyLand.jpg" alt="">
+            <img src="/assets/images/disneyLand.jpg" alt="curtis kilgore" data-aos="fade-left" data-aos-duration="1800">
             </header>
         </section>
 
@@ -72,42 +78,45 @@
             <div
             class="panel active"
             style="
-            background-image: url('https://images.unsplash.com/photo-1509719782173-841a7542cb4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1965&q=80');
+            background-image: url('/assets/gifs/dad-jokes.gif');
             "
         >
-            <h3>Meditate</h3>
+            <h3>Dad Jokes</h3>
         </div>
         <div
             class="panel"
             style="
-            background-image: url('https://images.unsplash.com/photo-1590305504523-3ce0ba800052?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fHNub3dib2FyZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+            background-image: url('/assets/gifs/content-placeholder.gif');
             "
         >
-            <h3><a href="https://github.com/CurtisKil">Slide</a></h3>
+            <h3><a href="https://github.com/CurtisKil">Content Placeholder</a></h3>
         </div>
         <div
             class="panel"
             style="
-            background-image: url('https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c25vd2JvYXJkaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+            background-image: url('/assets/gifs/auto-text-effect-2.gif');
             "
         >
-            <h3>Get Up</h3>
+            <h3>Auto Text Effect</h3>
         </div>
 
         <div
             class="panel"
             style="
-            background-image: url('https://images.unsplash.com/photo-1587251749984-4859e9016882?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8c25vd2JvYXJkaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+            background-image: url('/assets/gifs/random-choice-picker.gif');
             "
         >
-            <h3>Flip</h3>
+            <h3>Random Choice Picker</h3>
         </div>
         <div
             class="panel"
             style="
-            background-image: url('https://images.unsplash.com/photo-1585247829899-676cb4d6d5d7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHNub3dib2FyZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+            background-image: url('/assets/gifs/drink-yo-water.gif');
             "
         >
+            <h3><a href="https://curtiskil.github.io/drink-yo-water/
+" target="_blank">Drink Yo Water</a></h3>
+
         </div>
         </section>
 
@@ -135,6 +144,12 @@
         </form>
         </div>
         </section>
+    <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Smooth Scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="script.js"></script>
   </body>
