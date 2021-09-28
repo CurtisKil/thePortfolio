@@ -244,7 +244,7 @@
           </ul>
         </div>
         <div class="contact">
-          <form>
+          <form action="POST" data-netlify='true'>
             <p>
               <label>Name</label>
               <input type="text" name="name" />
@@ -264,6 +264,13 @@
             <p class="full">
               <label>Message</label>
               <textarea name="message" rows="5"></textarea>
+            </p>
+            <p class="full">
+              <label>Upload File</label>
+              <input type="file" name="myFile" rows="5" id="myFile"></input>
+            </p>
+            <p class="field">
+              <div data-netlify-recaptcha="true"></div>
             </p>
             <p class="full">
               <button>Submit</button>
