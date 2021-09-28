@@ -7,150 +7,287 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Tailwind -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css"
+      integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="/css/lightbox.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Curtis Kilgore</title>
   </head>
-    <body>
-        <nav class="nav">
-        <div class="container">
-            <h1 class="logo" id="home"><a href="#home">CK</a></h1>
-            <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <body id="home">
+    <header class="hero">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">CK <i class="fa-solid fa-laptop-code"></i></h1>
+        <nav>
+          <ul>
+            <li class="pages"><a href="#home">Home</a></li>
+            <li class="pages"><a href="#about">About</a></li>
+            <li class="pages"><a href="#projects">Projects</a></li>
+            <li class="pages"><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
+      </div>
 
-        <div class="hero">
-            <div class="container">
-                <h1>Curtis Kilgore The
-                    <span class="txt-type" data-wait="2000" data-words='["Coder", "& Creator"]'></span>
-                </h1>
-                <ul>
-                <li>
-                    <a href="https://github.com/CurtisKil" target="_blank"
-                    ><i class="fab fa-github fa-2x"> </i> <br />
-                    GitHub</a
-                    >
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/curtis-kilgore/" target="_blank"
-                    ><i class="fab fa-linkedin fa-2x"></i><br />
-                    LinkedIn</a
-                    >
-                </li>
-                <li>
-                    <a href="https://docs.google.com/document/d/1yiM7aJHAEpUdsYRhb-SfHFInVcceOhPpb2oUsVjGGM4/edit?usp=sharing" target="_blank"
-                    ><i class="far fa-file fa-2x"></i><br />
-                    Resume</a
-                    >
-                </li>
-                </ul>
-            </div>
+      <div class="content">
+        <h1>
+          Curtis Kilgore
+          <span
+            class="txt-type"
+            data-wait="2000"
+            data-words='["The Coder", "& Creator"]'
+          ></span>
+        </h1>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/CurtisKil"
+              target="_blank"
+              class="wiggle"
+              ><i class="fab fa-github fa-2x"> </i> <br />
+              GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/curtis-kilgore/"
+              target="_blank"
+              class="wiggle"
+              ><i class="fab fa-linkedin fa-2x"></i><br />
+              LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1yiM7aJHAEpUdsYRhb-SfHFInVcceOhPpb2oUsVjGGM4/edit?usp=sharing"
+              target="_blank"
+              class="wiggle"
+              ><i class="far fa-file fa-2x"></i><br />
+              Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="section content cases flex-grid section-padding" id="about">
+      <header class="section-header">
+        <h2 data-aos="fade-right" data-aos-duration="800">About Me</h2>
+        <p data-aos="fade-up" data-aos-duration="1400">
+          I am a Front End Web Developer from Riverside, CA. I received a
+          certificate from University California Riverside's Full Stack Coding
+          Bootcamp and an Associates Degree in Social Science from Riverside
+          City College. I've continued my learning through Yoogle University
+          (YouTube & Google) online courses, tutorials, freelance projects, and
+          personal projects. I'm committed to learning and coding and it excites
+          me that in this field we never stop learning and developing our
+          skills. As an athlete, I love that. I look forward to applying the
+          skills I've acquired from being an athlete and restaurant
+          server/bartender such as my ability to adapt, manage time effectively,
+          and communicate efficiently while collaborating with a team to come up
+          with creative solutions to problems through code. I love growing and
+          fine tuning my skills. When I'm not coding, I enjoy audiobooks,
+          podcasts, live events, snowboarding, golfing, DIY projects, lifting,
+          yoga, learning, and trying new things.
+        </p>
+
+        <img
+          src="/assets/images/cougarCrest.jpg"
+          alt="curtis kilgore"
+          data-aos="fade-left"
+          data-aos-duration="1800"
+        />
+      </header>
+    </section>
+
+    <section class="content section projects flex-grid" id="projects">
+      <div class="row">
+        <div class="column">
+          <a
+            href="/assets/gifs/js-password-generator.gif"
+            data-lightbox="projects"
+            data-title="A password generator that gives the user up to 75 characters and the choice of using symbols, numbers, lower and uppercase letters. And the ability to copy the password to their clipboard. Built with HTML, CSS, and JavaScript."
+          >
+            <img src="/assets/gifs/js-password-generator.gif" alt="project 1"
+          /></a>
+          <h2>
+            <a
+              href="https://github.com/CurtisKil/js-password-generator"
+              target="_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a
+              href="https://curtiskil.github.io/js-password-generator/"
+              target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
+          <a href="/assets/gifs/tip-calculator.gif" data-lightbox="projects" data-title="A tip calculator that can calculate a 10, 15, or 20 percent tip for the user. Built with HTML, CSS, Flexbox, JavaScript, and the DOM.">
+            <img src="/assets/gifs/tip-calculator.gif" alt="project 2"
+          /></a>
+          <h2>
+            <a href="https://github.com/CurtisKil/tip-calculator" target=_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a href="https://curtiskil.github.io/tip-calculator/" target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
         </div>
+        <div class="column">
+          <a href="/assets/gifs/todo.gif" data-lightbox="projects" data-title="A todo list that allows the user to add, remove, and filter through todos. Built with HTML, Materialize, and the DOM through JavaScript.">
+            <img src="/assets/gifs/todo.gif" alt="project 3"
+          /></a>
+          <h2>
+            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
+          <a href="/assets/gifs/manessegrading.gif" data-lightbox="projects" data-title="A website built for a construction grading company I built as my first paid freelance project. It was built using HTML, CSS, Bootstrap, JavaScript and has the Bootstrap smooth scroll feature.">
+            <img src="/assets/gifs/manessegrading.gif" alt="project 4"
+          /></a>
+          <h2>
+            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
+        </div>
+        <div class="column">
+          <a href="/assets/gifs/js-quiz.gif" data-lightbox="projects" data-title="A JavaScript quiz app. Built with HTML, CSS, and JavaScript.">
+            <img src="/assets/gifs/js-quiz.gif" alt="project 5"
+          /></a>
+          <h2>
+            <a href="https://github.com/CurtisKil/js-quiz" target="_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a href="https://curtiskil.github.io/js-quiz/" target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
+          <a href="/assets/gifs/weather-app.gif" data-lightbox="projects" data-title="An application utilizing the Weather Underground API and the JavaScript fetch API. It allows the user to obtain weather information for the city and country of their choosing and that choice gets stored in local storage. It was built with HTML, Bootstrap, JavaScript.">
+            <img src="/assets/gifs/weather-app.gif" alt="project 6"
+          /></a>
+          <h2>
+            <a href="https://github.com/CurtisKil/weatherApp" target="_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a href="https://curtiskil.github.io/weatherApp/" target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
+        </div>
+        <div class="column">
+          <a href="/assets/gifs/booklistOOP.gif" data-lightbox="projects" data-title="A JavaScript Object Oriented Programming app that allows a user to add a book that they either want or have read. It's first built with ES5 syntax (constructors & prototypes) and then the ES6 syntax (classes). Also built with HTML & CSS.">
+            <img src="/assets/gifs/booklistOOP.gif" alt="project 7"
+          /></a>
+          <h2>
+            <a href="https://github.com/CurtisKil/bookListOOP" target="_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a href="https://curtiskil.github.io/bookListOOP/" target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
+          <a href="/assets/gifs/dad-jokes.gif" data-lightbox="projects" data-title="An app that generates dad jokes using the third party API called, 'icanhazdadjoke'. Built with HTML, CSS, and JavaScript.">
+            <img src="/assets/gifs/dad-jokes.gif" alt="project 8"
+          /></a>
+          <h2>
+            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+              ><i class="fab fa-github-square"></i> GitHub
+            </a>
+            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+              ><i class="fas fa-laptop"></i> Live
+            </a>
+          </h2>
+        </div>
+      </div>
+    </section>
 
-        <section class="section content cases flex-grid section-padding" id="about">
-        <header class="section-header">
-            <h2 data-aos="fade-right" data-aos-duration="800">About Me</h2>
-            <p data-aos="fade-up" data-aos-duration="1400">
-           Front End Web Developer from Riverside, CA. Currently living in San Diego! I received a certificate from University California Riverside's Full Stack Coding Bootcamp and an Associates Degree in Social Science from Riverside City College. I've continued my learning through online courses, tutorials, freelance projects, and personal projects. 
-           
-           I love learning and coding and it excites me that in this field we never stop learning and developing our skills. As an athlete, I love that. I love fine tuning my skills. When I'm not coding, I enjoy audiobooks, podcasts, snowboarding, golfing, DIY projects, yoga, learning, and new things.
+    <!-- <section id="contact"> -->
+    <div class="form-container" id="contact">
+      <h1 class="brand">Contact <span>Me</span></h1>
+      <div class="wrapper" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="my-info">
+          <h3>Curtis Kilgore</h3>
+          <ul>
+            <li>
+              <i class="fa fa-phone"></i
+              ><a href="tel://19519615070"> 951-961-5070</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:lucidck17@gmail.com">lucidck17@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <form>
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" />
             </p>
-            <img src="/assets/images/disneyLand.jpg" alt="curtis kilgore" data-aos="fade-left" data-aos-duration="1800">
-            </header>
-        </section>
-
-        <section class="content section " id="projects">
-        <div class="section-content card-container ">
-            <h2>Projects</h2>
-            <div
-            class="panel active"
-            style="
-            background-image: url('/assets/gifs/dad-jokes.gif');
-            "
-        >
-            <h3>Dad Jokes</h3>
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="text" name="email" />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" />
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5"></textarea>
+            </p>
+            <p class="full">
+              <button>Submit</button>
+            </p>
+          </form>
         </div>
-        <div
-            class="panel"
-            style="
-            background-image: url('/assets/gifs/content-placeholder.gif');
-            "
-        >
-            <h3><a href="https://github.com/CurtisKil">Content Placeholder</a></h3>
-        </div>
-        <div
-            class="panel"
-            style="
-            background-image: url('/assets/gifs/auto-text-effect-2.gif');
-            "
-        >
-            <h3>Auto Text Effect</h3>
-        </div>
+      </div>
+    </div>
 
-        <div
-            class="panel"
-            style="
-            background-image: url('/assets/gifs/random-choice-picker.gif');
-            "
-        >
-            <h3>Random Choice Picker</h3>
-        </div>
-        <div
-            class="panel"
-            style="
-            background-image: url('/assets/gifs/drink-yo-water.gif');
-            "
-        >
-            <h3><a href="https://curtiskil.github.io/drink-yo-water/
-" target="_blank">Drink Yo Water</a></h3>
-
-        </div>
-        </section>
-
-        <section class="container content cases flex-grid section-padding row" id="contact">
-        <div class="form-container">
-        <h1>Contact</h1>
-        <form>
-            <div class="form-control">
-            <input type="name" required />
-            <label>First Name</label>
-            </div>
-
-            <div class="form-control">
-            <input type="name" required />
-            <label>Last Name</label>
-            </div>
-
-            <div class="form-control">
-            <input type="email" required />
-            <label>Email</label>
-            </div>
-
-            <button class="btn">Submit</button>
-
-        </form>
-        </div>
-        </section>
     <!-- AOS.js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <!-- Smooth Scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="script.js"></script>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Lightbox -->
+    <script src="/js/lightbox.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
