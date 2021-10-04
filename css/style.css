@@ -21,15 +21,16 @@ body {
   color: #fff;
   opacity: 0.8;
   width: 100%;
-  height: 70px;
+  height: 60px;
   position: fixed;
   top: 0px;
   padding: 0 30px;
   transition: all 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .navbar.active {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -37,6 +38,18 @@ body {
   color: #fff;
   padding: 10px 20px;
   margin: 0 5px;
+  display: block;
+  color: #fff;
+  font-weight: 505;
+  text-decoration: none;
+  padding: 5px 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar .logo {
+  font-weight: 400;
+  font-size: 30px;
 }
 
 .navbar a.focus,
@@ -44,6 +57,7 @@ body {
 .logo:hover {
   color: #f3963e;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .navbar.active a,
@@ -51,36 +65,17 @@ body {
   color: #000;
 }
 
-.navbar.active a:hover,
-.navbar.active .logo:hover {
-  color: #f3963e;
-  cursor: pointer;
-}
-
 .navbar ul {
   display: flex;
 }
 
 .navbar li {
-  font-size: 24px;
-}
-
-.navbar li:hover {
-  transform: scale(1.1);
-}
-
-.navbar .logo {
-  font-weight: 400;
-  font-size: 40px;
-}
-
-.navbar h1:hover {
-  transform: scale(1.1);
+  font-size: 22px;
 }
 
 /* Hero */
 .hero {
-  background-image: url("https://images.unsplash.com/photo-1618388810903-840bb0d15ea5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+  background-image: url("/assets/images/bg-2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -101,8 +96,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -3;
 }
 
 .hero p {
@@ -110,18 +105,13 @@ body {
   letter-spacing: 1px;
 }
 
-.content h3 {
-  font-size: 150%;
-  margin: 20px 0;
-}
-
-.content p {
+.about p {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.5px;
 }
 
-.hero a {
+.hero a.wiggle {
   display: block;
   color: #fff;
   font-weight: 505;
@@ -180,7 +170,7 @@ body {
   }
 }
 
-.content h1 {
+header h1 {
   font-size: 50px;
   margin-bottom: 10px;
 }
@@ -191,8 +181,14 @@ body {
   margin: 0 auto;
 }
 
-/* Section Header */
-.section-header {
+/* About */
+#about {
+  height: 100vh;
+  padding: 20px 20px 40px;
+}
+
+.about-content {
+  margin-top: 70px;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -201,34 +197,14 @@ body {
   text-align: center;
 }
 
-.section-header h2 {
-  font-size: 40px;
-  /* margin: 20px 0; */
-}
-
-.section-padding {
-  padding: 20px 20px 40px;
-}
-
-.section-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-#about {
-  height: 100vh;
-}
-
 #about h2 {
   font-size: 40px;
   margin: 40px 0 20px 0;
 }
 
 #about img {
-  height: 300px;
-  width: 275px;
+  width: 25%;
+  height: auto;
   margin-top: 30px;
   border-radius: 50%;
   z-index: -1;
@@ -281,9 +257,10 @@ body {
 
 /* Contact Form */
 .form-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 16px;
+  z-index: inherit;
 }
 
 .my-info ul {
@@ -291,17 +268,9 @@ body {
   padding: 0;
 }
 
-.brand {
-  text-align: center;
-  font-size: 4 0px;
-}
-
-.brand span {
-  color: #f3963e;
-}
-
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  margin-top: 48px;
 }
 
 .wrapper > * {
@@ -355,7 +324,7 @@ body {
 .contact form input,
 .contact form textarea {
   width: 100%;
-  padding: 0.3em;
+  padding: 1.5px;
   border: 1px solid #000;
 }
 
@@ -376,7 +345,7 @@ body {
 @media (max-width: 800px) {
   .navbar {
     flex-direction: column;
-    height: 110px;
+    height: 90px;
   }
 
   .navbar a {
@@ -386,7 +355,8 @@ body {
   }
 
   .navbar .logo {
-    margin-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   #about {
@@ -397,7 +367,7 @@ body {
     height: 330vh;
   }
 
-  .content h1 {
+  .header h1 {
     font-size: 40px;
   }
 
@@ -410,10 +380,14 @@ body {
 
 @media (max-width: 640px) {
   #about {
-    height: 220vh;
+    height: 230vh;
   }
   #projects {
-    height: 370vh;
+    height: 460vh;
+  }
+
+  #contact {
+    font-size: 18px;
   }
 }
 
