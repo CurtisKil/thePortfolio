@@ -14,14 +14,6 @@
     />
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Tailwind -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css"
-      integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- Animate CSS -->
     <link
       rel="stylesheet"
@@ -38,10 +30,10 @@
        <a href="#home" class="logo"> CK <i class="fa-solid fa-laptop-code"></i></a>
         <nav>
           <ul>
-            <li class="pages"><a href="#home">Home</a></li>
-            <li class="pages"><a href="#about">About</a></li>
-            <li class="pages"><a href="#projects">Projects</a></li>
-            <li class="pages"><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -52,7 +44,7 @@
           <span
             class="txt-type"
             data-wait="2000"
-            data-words='["welcome to my portfolio"]'
+            data-words='["welcome to my portfolio!"]'
           ></span>
         </h1>
         <ul>
@@ -112,15 +104,44 @@
     </section>
 
     <section class="content section projects flex-grid" id="projects">
-      <div class="row">
+
+      <div class="gallery">
+        <div class="video-container">
+          <video src="/assets/mp4s/weather-app.mp4" title="Weather Application" data-original='weather-app.mp4' autoplay loop alt></video>
+        </div>
+        <div class="video-container">
+          <video src="/assets/mp4s/js-password-generator.mp4" title="JavaScript Password Generator" data-original='js-password-generator.mp4' autoplay loop alt></video>
+        </div>
+        <div class="video-container">
+          <video src="/assets/mp4s/dad-jokes.mp4" title="Dad Joke Generator From API" data-original='dad-jokes.mp4' autoplay loop alt></video>
+        </div>
+        <div class="video-container">
+          <video src="/assets/mp4s/booklist00P.mp4" title="Booklist app using Object Oriented Programming (OOP)" data-original='booklistOOP.mp4' autoplay loop alt></video>
+        </div>
+        <div class="video-container">
+          <video src="/assets/mp4s/manessegrading.mp4" title="A construction grading website" data-original='manessegrading.mp4' autoplay loop alt></video>
+        </div>
+        <div class="video-container">
+          <video src="/assets/mp4s/tip-calculator.mp4" title="App that calculates the user's tip percentage." data-original='tip-calculator.mp4' autoplay loop alt></video>
+        </div>
+        <div class="video-container">
+          <video src="/assets/mp4s/todo.mp4" title="App that calculates the user's tip percentage." data-original='todo.mp4' autoplay loop alt></video>
+        </div>
+        <div class="video-container">
+          <video src="/assets/mp4s/js-quiz.mp4" title="App that calculates the user's tip percentage." data-original='js-quiz.mp4' autoplay loop alt></video>
+        </div>
+      </div>
+
+      <!-- <div class="row">
         <div class="column">
           <a
-            href="/assets/gifs/js-password-generator.gif"
+            href="/assets/mp4s/js-password-generator.mp4"
             data-lightbox="projects"
             data-title="A password generator that gives the user up to 75 characters and the choice of using symbols, numbers, lower and uppercase letters. And the ability to copy the password to their clipboard. Built with HTML, CSS, and JavaScript."
           >
-            <img src="/assets/gifs/js-password-generator.gif" alt="project 1"
-          /></a>
+            <video autoplay loop><source src="/assets/mp4s/js-password-generator.mp4" type="video/mp4" alt="project 1"></video>
+            
+          </a>
           <h2>
             <a
               href="https://github.com/CurtisKil/js-password-generator"
@@ -133,9 +154,9 @@
               ><i class="fas fa-laptop"></i> Live
             </a>
           </h2>
-          <a href="/assets/gifs/tip-calculator.gif" data-lightbox="projects" data-title="A tip calculator that can calculate a 10, 15, or 20 percent tip for the user. Built with HTML, CSS, Flexbox, JavaScript, and the DOM.">
-            <img src="/assets/gifs/tip-calculator.gif" alt="project 2"
-          /></a>
+          <a href="/assets/mp4s/tip-calculator.mp4" data-lightbox="projects" data-title="A tip calculator that can calculate a 10, 15, or 20 percent tip for the user. Built with HTML, CSS, Flexbox, JavaScript, and the DOM.">
+            <video autoplay loop alt="project 2"><source src="/assets/mp4s/tip-calculator.mp4"></video>
+          </a>
           <h2>
             <a href="https://github.com/CurtisKil/tip-calculator" target=_blank"
               ><i class="fab fa-github-square"></i> GitHub
@@ -146,33 +167,30 @@
           </h2>
         </div>
         <div class="column">
-          <a href="/assets/gifs/todo.gif" data-lightbox="projects" data-title="A todo list that allows the user to add, remove, and filter through todos. Built with HTML, Materialize, and the DOM through JavaScript.">
-            <img src="/assets/gifs/todo.gif" alt="project 3"
-          /></a>
+          <a href="/assets/mp4s/todo.mp4" data-lightbox="projects" data-title="A todo list that allows the user to add, remove, and filter through todos. Built with HTML, Materialize, and the DOM through JavaScript.">
+            <video autoplay loop><source src="/assets/mp4s/todo.mp4"></video></a>
           <h2>
-            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+            <a href="https://github.com/CurtisKil/todo-list" target="_blank"
               ><i class="fab fa-github-square"></i> GitHub
             </a>
-            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+            <a href="https://curtiskil.github.io/todo-list/" target="_blank"
               ><i class="fas fa-laptop"></i> Live
             </a>
           </h2>
-          <a href="/assets/gifs/manessegrading.gif" data-lightbox="projects" data-title="A website built for a construction grading company I built as my first paid freelance project. It was built using HTML, CSS, Bootstrap, JavaScript and has the Bootstrap smooth scroll feature.">
-            <img src="/assets/gifs/manessegrading.gif" alt="project 4"
-          /></a>
+          <a href="/assets/mp4s/manessegrading.mp4" data-lightbox="projects" data-title="A website built for a construction grading company I built as my first paid freelance project. It was built using HTML, CSS, Bootstrap, JavaScript and has the Bootstrap smooth scroll feature.">
+            <video autoplay loop><source src="/assets/mp4s/manessegrading.mp4"> </video></a>
           <h2>
-            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+            <a href="https://github.com/CurtisKil/manesseGrading_2" target="_blank"
               ><i class="fab fa-github-square"></i> GitHub
             </a>
-            <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
+            <a href="https://manessegrading.com/" target="_blank"
               ><i class="fas fa-laptop"></i> Live
             </a>
           </h2>
         </div>
         <div class="column">
-          <a href="/assets/gifs/js-quiz.gif" data-lightbox="projects" data-title="A JavaScript quiz app. Built with HTML, CSS, and JavaScript.">
-            <img src="/assets/gifs/js-quiz.gif" alt="project 5"
-          /></a>
+          <a href="/assets/mp4s/js-quiz.mp4" data-lightbox="projects" data-title="A JavaScript quiz app. Built with HTML, CSS, and JavaScript.">
+            <video autoplay loop><source src="/assets/mp4s/js-quiz.mp4"> </video></a>
           <h2>
             <a href="https://github.com/CurtisKil/js-quiz" target="_blank"
               ><i class="fab fa-github-square"></i> GitHub
@@ -181,9 +199,8 @@
               ><i class="fas fa-laptop"></i> Live
             </a>
           </h2>
-          <a href="/assets/gifs/weather-app.gif" data-lightbox="projects" data-title="An application utilizing the Weather Underground API and the JavaScript fetch API. It allows the user to obtain weather information for the city and country of their choosing and that choice gets stored in local storage. It was built with HTML, Bootstrap, JavaScript.">
-            <img src="/assets/gifs/weather-app.gif" alt="project 6"
-          /></a>
+          <a href="/assets/mp4s/weather-app.mp4" data-lightbox="projects" data-title="An application utilizing the Weather Underground API and the JavaScript fetch API. It allows the user to obtain weather information for the city and country of their choosing and that choice gets stored in local storage. It was built with HTML, Bootstrap, JavaScript.">
+            <video autoplay loop alt="project 6"><source src="/assets/mp4s/weather-app.mp4"> </video></a>
           <h2>
             <a href="https://github.com/CurtisKil/weatherApp" target="_blank"
               ><i class="fab fa-github-square"></i> GitHub
@@ -194,9 +211,8 @@
           </h2>
         </div>
         <div class="column">
-          <a href="/assets/gifs/booklistOOP.gif" data-lightbox="projects" data-title="A JavaScript Object Oriented Programming app that allows a user to add a book that they either want or have read. It's first built with ES5 syntax (constructors & prototypes) and then the ES6 syntax (classes). Also built with HTML & CSS.">
-            <img src="/assets/gifs/booklistOOP.gif" alt="project 7"
-          /></a>
+          <a href="/assets/mp4s/booklist00P.mp4" data-lightbox="projects" data-title="A JavaScript Object Oriented Programming app that allows a user to add a book that they either want or have read. It's first built with ES5 syntax (constructors & prototypes) and then the ES6 syntax (classes). Also built with HTML & CSS.">
+            <video autoplay loop><source src="/assets/mp4s/booklist00P.mp4"> </video> </a>
           <h2>
             <a href="https://github.com/CurtisKil/bookListOOP" target="_blank"
               ><i class="fab fa-github-square"></i> GitHub
@@ -205,9 +221,9 @@
               ><i class="fas fa-laptop"></i> Live
             </a>
           </h2>
-          <a href="/assets/gifs/dad-jokes.gif" data-lightbox="projects" data-title="An app that generates dad jokes using the third party API called, 'icanhazdadjoke'. Built with HTML, CSS, and JavaScript.">
-            <img src="/assets/gifs/dad-jokes.gif" alt="project 8"
-          /></a>
+          <a href="/assets/mp4s/dad-jokes.mp4" data-lightbox="projects" data-title="An app that generates dad jokes using the third party API called, 'icanhazdadjoke'. Built with HTML, CSS, and JavaScript.">
+          <video autoplay loop> <source src="/assets/mp4s/dad-jokes.mp4"></video>
+          </a>
           <h2>
             <a href="https://curtiskil.github.io/dad-jokes/" target="_blank"
               ><i class="fab fa-github-square"></i> GitHub
@@ -217,7 +233,7 @@
             </a>
           </h2>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section id="contact">
