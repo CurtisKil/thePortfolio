@@ -1,6 +1,37 @@
 const nav = document.querySelector(".navbar");
 window.addEventListener("scroll", fixNav);
 
+// Modal Selectors
+const modal = document.querySelector(".modal");
+const videos = document.querySelectorAll(".gallery video");
+const modalVideo = document.querySelector(".modal-video");
+const caption = document.querySelector(".caption");
+
+// Modal Code
+// <------------------------------>
+// Loop through videos
+videos.forEach((video) => {
+  video.addEventListener("click", () => {
+    modal.classList.add("open");
+    modalVideo.classList.add("open");
+    // Dynamically change text and video
+    const videoSrc = video.getAttribute("data-original");
+    console.log(videoSrc);
+    modalVideo.src = videoSrc;
+    const titleText = video.title;
+    caption.textContent = titleText;
+    modalVideo.play();
+  });
+});
+
+// Close Modal
+modal.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal")) {
+    modal.classList.remove("open");
+    modalVideo.classList.remove("open");
+  }
+});
+
 // Typewriter Effect
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
